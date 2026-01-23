@@ -7,7 +7,7 @@ header {
   height: 293px;
   padding: 0px 50px 0px 50px;
 }
-/*.menu {
+.menu {
   display: flex;
   flex-wrap: nowrap;
   gap: 33px;
@@ -17,41 +17,7 @@ header {
   word-spacing: 0px;
   list-style: circle;
   list-style-position: outside;
-}  ЭТО БЫЛ АДЕКВАТНЫЙ КОД*/
-/*Я знаю что все что снизу - бессмысленная дичь. Можно было как то проще сделать. Просто я хотел убрать этот треклятый кружочек, и все.*/
-.menu {
-  display: inline-block;
-  margin-bottom: 4px;
-  font-size: 18px;
-  width: 391.48px;
-  height: 22px;
-  list-style: circle;
-  list-style-position: outside;
 }
-
-.element-menu {
-  display: inline-block;
-}
-
-.circle-menu-separate{
-  font-size: 15px;
-  margin-right: 11px;
-}
-
-.circle-menu-separate-2 {
-  font-size: 15px;
-  margin-right: 12px;
-  padding-left: 9.4px;
-}
-
-.round-scout {
-  display: inline-block;
-  margin-left: 7.2px;
-}
-
-.underline-none {
-  border-bottom: none;
-}/*Исправлю на адекватный вариант, когда получу от вас ревью. А может и так сойдет, не знаю*/
 
 .logo-black {
   width: 148px;
@@ -127,7 +93,7 @@ header {
   min-width: 1000px;
   min-height: 51px;
   margin: 0px 50px 47px 50px;
-  letter-spacing: -0.07px;
+  letter-spacing: 0.02px;
   word-spacing: 19px;
 }
 
@@ -363,4 +329,3 @@ header {
   font-size: 100px;
   text-transform: uppercase;
 }
-/*Я не знаю зачем убил столько времени на бессмыслицу. Хотя-бы попрактиковался.. Немного*/
