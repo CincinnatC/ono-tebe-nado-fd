@@ -2,7 +2,7 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   /*min-content нигде раньше не упоминался в курсе, на Доке тоже не нашел.
-  Скопировал, как сказали в рекомендацияк к оформлению, но что это не понял*/
+  Скопировал, как сказали в рекомендацияк к оформлению, но что это - не понял*/
   align-items: center;
   height: 293px;
   padding: 0px 50px 0px 50px;
@@ -18,6 +18,27 @@ header {
   list-style: circle;
   list-style-position: outside;
 }
+
+/*.menu {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 18px;
+  width: 391.48px;
+  height: 22px;
+  list-style: circle;
+  list-style-position: outside;
+}
+
+.element-menu {
+  display: inline-block;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.circle-menu-separate{
+  font-size: 15px;
+  margin-right: 9px;
+}*/
 
 .logo-black {
   width: 148px;
@@ -111,7 +132,6 @@ header {
 .title-lots {
   display: block;
   flex-wrap: nowrap;
-  width: 100%;
   min-width: 121px;
   min-height: 47px;
   margin: 182px 0px 27px 40px;
@@ -315,8 +335,12 @@ header {
   font-size: 20px;
 }
 
-.transform {
+.uppercase {
   text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .title-font {
