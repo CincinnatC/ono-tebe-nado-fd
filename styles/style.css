@@ -1,1 +1,85 @@
-/* место для вашего кода */
+.cover {
+}
+.lots {}
+.about {}
+
+header {
+  display: grid;
+  height: 293px;
+  padding: 0px 50px 0px 50px;
+  grid-template-columns: 1fr min-content 1fr;
+  /*min-content нигде раньше не упоминался! Я посмотрел в поиске на курсе. 2 упоминаниня -
+  в уроке про проектную работу, и в каком то еще, доступеном.
+  Я искал на Доке, но там только 1 упоминание этой штуки, мимоходом. Хотелось бы знать,
+  что я пишу, а не просто копировать код из рекомендаций к проектной работе :(*/
+  align-items: center;
+}
+.menu{
+  display: flex;
+  gap: 32px;
+  flex-wrap: nowrap;
+  list-style: circle;
+  list-style-position: outside;
+  margin-bottom: 2px;
+  font-size:18px;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  /*Попробовал через паддинги кружочки отодвинуть, но вышла фигня. Удалил.
+  Видимо тут нужны знания которые мы еще не проходили.
+  А еще почему-то меню съеживаться и
+  вообще не PerfectPixel. Что не так?*/
+}
+
+.logo-black {
+  width: 148px;
+  height: 105px;
+  background: url(../images/logo-black.svg) no-repeat center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  max-width: 240px;
+  max-height: 96px;
+  justify-self: end;
+  font-size: 18px;
+  margin-right: 36px;
+  line-height: 1.34; /*Вообще не знаю что я тут поставил, но работает. Думал пиксели поставил, а потом увидел что px нету. Это относительно чего 1.34?*/
+  /*Я не знаю, всегда так в тупую подгоняют
+  шрифты к макету? А с сайтами для разных экранов как?
+  Хотя не думаю что дизайнер нарисует много макетов
+  для разных экранов.
+  Ну и тут я заигрался в перфект пиксель*/
+}
+
+.description {
+  
+}
+
+/*.cycle {
+  padding-left: Xpx; - не работает
+}*/
+
+.anderline {
+  text-decoration: underline;
+}
+
+.underline {
+  border-bottom: 1.3px solid black;
+  padding-bottom: 0px;
+}
+
+.crutch-menu {
+   display: inline-block;
+   padding-right: 0px;
+
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.non-underscores {
+  text-decoration: none;
+}
