@@ -1,5 +1,3 @@
-.cover {
-}
 .lots {}
 .about {}
 
@@ -14,20 +12,20 @@ header {
   что я пишу, а не просто копировать код из рекомендаций к проектной работе :(*/
   align-items: center;
 }
-.menu{
+.menu {
   display: flex;
-  gap: 32px;
+  gap: 33px;
   flex-wrap: nowrap;
-  list-style: circle;
+  list-style: /*none*/ circle;
+  /*Я долго мучался с этими кружками, но, похоже, во флексах и гридах
+  без псевдоэлементов нельзя изменить тут ничего. Ну можно, но я не понял как)*/
   list-style-position: outside;
   margin-bottom: 2px;
   font-size:18px;
   word-spacing: 0px;
   letter-spacing: 0px;
   /*Попробовал через паддинги кружочки отодвинуть, но вышла фигня. Удалил.
-  Видимо тут нужны знания которые мы еще не проходили.
-  А еще почему-то меню съеживаться и
-  вообще не PerfectPixel. Что не так?*/
+  Видимо тут нужны знания которые мы еще не проходили.*/
 }
 
 .logo-black {
@@ -44,7 +42,7 @@ header {
   max-height: 96px;
   justify-self: end;
   font-size: 18px;
-  margin-right: 36px;
+  margin-right: -1px;
   line-height: 1.34; /*Вообще не знаю что я тут поставил, но работает. Думал пиксели поставил, а потом увидел что px нету. Это относительно чего 1.34?*/
   /*Я не знаю, всегда так в тупую подгоняют
   шрифты к макету? А с сайтами для разных экранов как?
@@ -53,16 +51,44 @@ header {
   Ну и тут я заигрался в перфект пиксель*/
 }
 
+.cover {
+  background: url(../images/cover.jpg);
+  min-height: 757px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
 .description {
   
+}
+
+.it {
+  display: block;
+}
+
+.you {
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.necessary {
+  display: block;
+  right: 0;
 }
 
 /*.cycle {
   padding-left: Xpx; - не работает
 }*/
 
-.anderline {
-  text-decoration: underline;
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .underline {
@@ -71,9 +97,9 @@ header {
 }
 
 .crutch-menu {
-   display: inline-block;
-   padding-right: 0px;
-
+  display: inline-block;
+  padding-right: 0px;
+  line-height: 20px;
 }
 
 .white-text {
@@ -82,4 +108,27 @@ header {
 
 .non-underscores {
   text-decoration: none;
+}
+
+.font-bld {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold
+}
+
+.font-normal {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  display: block;
+  text-transform: uppercase;
+  right: auto;
+  left: auto;
+  color: #FFFFFF;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 757px;
+  font-size: 100px;
 }
