@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body>
+  <body class="font-normal">
     <header>
       <nav>
         <ul class="menu">
@@ -31,7 +31,7 @@
     <main>
       <section class="cover">
         <div class="overlay"></div>
-        <h1 class="title"><span class="it font-bold inline-title">Оно</span><span class="you font-bold inline-title">Тебе</span><span class="necessary font-bold inline-title">Надо</span></h1>
+        <h1 class="title font-bold title-font"><span class="it inline-title">Оно</span><span class="you inline-title">Тебе</span><span class="necessary inline-title">Надо</span></h1>
         <div class="description white-text transform">
           <p>Аукцион вещей, в которые никто не верил</p>
           <button class="bid white-text transform">сделать ставку</button>
@@ -39,33 +39,43 @@
       </section>
       <section class="lots">
         <h2 class="transform title-lots">Лоты</h2>
-        <ul class="deck">
+        <ul class="deck white-text">
           <li class="sheet-cards">
             <a href="#" class="non-underscores">
               <article class="card film-card">
-                <p class="font-bold transform underline ">Фильм режиссёра, который бросил киношколу</p>
-                <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                <div class="overlay"></div>
+                <div class="card-content">
+                  <h3 class="font-bold transform card-title"><span class="underline-white">Фильм режиссёра,</span> <span class="underline-white">который бросил</span> <span class="underline-white">киношколу</span></h3>
+                  <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                </div>
               </article>
             </a>
           </li>
           <li class="sheet-cards">
             <a href="#" class="non-underscores">
               <article class="card book-card">
-                <p class="font-bold transform underline">Книга, где описан один скучный день из жизни рекламного агента</p>
-                <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-              </article>
+                <div class="overlay"></div>
+                <div class="card-content">
+                  <h3 class="font-bold transform card-title"><span class="underline-white">Книга, где описан</span> <span class="underline-white">один скучный день</span> <span class="underline-white">из жизни</span> <span class="underline-white">рекламного агента</span></h3>
+                  <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+                </div>
+                </article>
             </a>
           </li>
           <li class="sheet-cards">
             <a href="#" class="non-underscores">
               <article class="card painting-card">
-                <p class="font-bold transform underline">Картина, которую повторит даже 5-летний сын маминой подруги</p>
-                <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-              </article>
+                <div class="overlay"></div>
+                <div class="card-content">
+                  <h3 class="font-bold transform card-title"><span class="underline-white">Картина, которую</span> <span class="underline-white">повторит даже 5-</span><span class="underline-white">летний сын</span> <span class="underline-white">маминой подруги</span></h3>
+                  <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                </div>
+                </article>
             </a>
           </li>
+          <!--Новые карточки успешно встают на свое место (˙꒳​˙ )-->
         </ul>
-        <a href="#"></a>
+        <a href="#" class="more-information underline non-underscores">посмотреть больше</a>
       </section>
       <section class="about">
         <div></div>

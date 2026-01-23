@@ -112,12 +112,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 22px;
-  word-spacing: 18px;
-  letter-spacing: 0.08px;
+  word-spacing: 19px;
+  letter-spacing: 0.02px;
   min-width: 1000px;
   min-height: 51px;
-  margin: 0 50px 50px 50px;
+  margin: 0px 50px 47px 50px;
   z-index: 3;
   
 }
@@ -133,16 +132,11 @@ header {
   margin: 0px 24px 0px 24px;
 }
 
-.underline {
-  border-bottom: 1.3px solid black;
-  padding-bottom: 0px;
-}
-
 .title-lots {
   display: block;
   width: 100%;
   flex-wrap: nowrap;
-  margin: 2px 0px 0px 64px;
+  margin: 182px 0px 27px 40px;
   font-size: 40px;
   min-height: 47px;
   min-width: 121px;
@@ -152,17 +146,33 @@ header {
 .deck {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
 .card {
+  position: relative;
+  width: 334px;
+  height: 596px;
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 334px;
   height: 596px;
-  padding: 50px;
-  list-style: none;
+  padding: 46px 40px 48px 40px;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-title {
+  margin-top: 2px;
+  line-height: 26px;
 }
 
 .film-card {
@@ -190,6 +200,12 @@ header {
   display: inline-block;
 }
 
+.more-information {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -208,25 +224,38 @@ header {
   color: #FFFFFF;
 }
 
+.underline {
+  border-bottom: 1.3px solid black;
+  padding-bottom: 0px;
+}
+
+.underline-white {
+  border-bottom: 1.3px solid white;
+  padding-bottom: 0px;
+  /*в макете подчеркивание еще ближе к тексту, но отрицательный паддинг не воспринимается. Не знаю как тут быть.*/
+}
+
 .non-underscores {
   text-decoration: none;
 }
 
 .font-bold {
   font-family: "Raleway", sans-serif;
-  font-weight: bold
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .font-normal {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
+  font-size: 22px;
 }
 
 .transform {
   text-transform: uppercase;
 }
 
-h1 {
+.title-font {
   text-transform: uppercase;
   color: #FFFFFF;
   z-index: 2;
