@@ -30,7 +30,6 @@
       <a>
         <img src="../images/logo-black.svg" alt="Логотип" class="logo-black">
       </a>
-      <!--Я уже который коммит оборачиваю это лого в ссылку. Что не так?-->
       <address class="contacts">
         <div>
           <a
@@ -49,13 +48,16 @@
     </header>
     <main>
       <section id="cover" class="cover">
-        <!--С этой секцией я что-то намудрил-->
+        <!--С этой секцией я что-то намудрил. А еще бэкграунд не по PerfeckPixel. Не понимаю почему не сходиться-->
         <div class="overlay"></div>
         <h1 class="title font-bold title-font">
           <span class="it inline-title">Оно</span>
           <span class="you inline-title">Тебе</span>
           <span class="necessary inline-title">Надо</span>
-        </h1> <!--В дев туле какая-то дичь показываеться при просмотре h1-->
+        </h1>
+        <!--В дев туле какая-то дичь показываеться при просмотре h1. Я уже понял, что давать grid заголовку -
+          плохая идея (×﹏×) Скорее всего стоит сделать cover grid-ом и переделать вообще весь блок cover. Был
+          бы признателен, если бы вы посоветовали, как тут лучше организовать код-->
         <div class="description white-text uppercase">
           <p>Аукцион вещей, в которые никто не верил</p>
           <button class="bid white-text uppercase">Сделать ставку</button>
@@ -196,17 +198,17 @@
       <ul class="links-circles-footer">
         <li>
           <a href="" class="footer-link-socialnetworks"
-            ><img src="../images/yt.svg" alt="Ссылка на YouTube"
+            ><img src="../images/yt.svg" alt="Ссылка на YouTube" class="circle-link-size"
           /></a>
         </li>
         <li>
           <a href="" class="footer-link-socialnetworks"
-            ><img src="../images/vk.svg" alt="Ссылка на VK"
+            ><img src="../images/vk.svg" alt="Ссылка на VK" class="circle-link-size"
           /></a>
         </li>
         <li>
           <a href="" class="footer-link-socialnetworks"
-            ><img src="../images/pinterest.svg" alt="Ссылка на Pinterest"
+            ><img src="../images/pinterest.svg" alt="Ссылка на Pinterest" class="circle-link-size"
           /></a>
         </li>
         <!--А тут alt мне кажется нужным, это же ссылки на другие ресурсы. Ну крч да :З-->
