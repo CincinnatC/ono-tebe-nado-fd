@@ -1,10 +1,8 @@
-header {
+.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  /*min-content нигде раньше не упоминался в курсе, на Доке тоже не нашел.
-  Скопировал, как сказали в рекомендацияк к оформлению, но что это - не понял*/
   align-items: center;
-  height: 293px;
+  min-height: 293px;
   padding: 0px 50px 0px 50px;
 }
 .menu {
@@ -15,8 +13,10 @@ header {
   font-size: 18px;
   list-style: circle;
   list-style-position: outside;
-  /*Моя боль этой проектной. Треклятый
-    кружок у первого элемента*/
+}
+
+.non-circle {
+  list-style: none;
 }
 
 .logo-black {
@@ -24,8 +24,6 @@ header {
   height: 105px;
   margin-bottom: -6px;
   padding-left: 2px;
-  /*Можно было бы еще размеры изменить, что бы
-  пиксель в пиксель было, но это бессмыслица*/
 }
 
 .contacts {
@@ -33,48 +31,29 @@ header {
   flex-direction: column;
   justify-self: end;
   max-width: 240px;
-  max-height: 96px;
-  margin-right: -1px;
+  min-height: 96px;
   font-size: 18px;
   font-style: normal;
-  line-height: 1.32;
 }
 
-.it {
-  grid-area: it;
-  padding-top: 1px;
+.title-beginning {
+  padding-left: 50px;
+  padding-top: 166px;
 }
 
-.you {
-  grid-area: you;
-  padding-left: 39px;
-  padding-top: 1px;
+.title-middle {
+  padding-left: 380px;
+  padding-top: 18px;
 }
 
-.necessary {
-  grid-area: necessary;
-  padding-left: 31px;
-  padding-top: 1px;
+.title-end {
+  padding-left: 664px;
+  padding-top: 17px;
 }
 
 .inline-title {
   display: block;
   letter-spacing: 30px;
-}
-
-.title {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 115px);
-  grid-template-areas:
-    "it it it . . . ."
-    ". . you you you . ."
-    ". . . . necessary necessary necessary";
-  justify-content: left;
-  gap: 20px;
-  width: 100%;
-  height: 385px;
-  padding: 165px 50px;
 }
 
 .cover {
@@ -100,8 +79,6 @@ header {
   padding: 0px 50px 47px 50px;
   letter-spacing: 0.02px;
   word-spacing: 18.4px;
-  /*Как бы не крутил word-spacing, размывается.
-  Какой то фундаментальный просчет видимо*/
 }
 
 .bid {
@@ -135,9 +112,12 @@ header {
 .card {
   position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   margin-bottom: 28px;
   list-style: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card-content {
@@ -159,23 +139,14 @@ header {
 
 .film-card {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .book-card {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .painting-card {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .sheet-cards {
@@ -211,8 +182,6 @@ header {
 .white-logo {
   width: 148px;
   height: 114px;
-  /*Не понимаю почему, но тут можно оставить только
-    width, либо только height, и лого будет нужного размера*/
   margin-top: 3px;
   margin-right: -1px;
 }
@@ -245,19 +214,18 @@ header {
   align-items: center;
   font-size: 18px;
   line-height: 1.22;
-  /*Че то не сходиться с макетом все равно*/
   list-style: none;
   list-style-position: outside;
 }
 
-.footer-contacts {
-  display: flex;
-  flex-direction: column;
-  min-width: 240px;
-  min-height: 96px;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.38;
+.contacts-unique {
+  justify-self: start;
+  padding-top: 2px;
+  line-height: 1.33;
+}
+
+.contact-carry-after-dash {
+  line-height: 1.34;
 }
 
 .links-circles-footer {
@@ -298,11 +266,13 @@ header {
 }
 
 .underline {
+  text-decoration: none;
   border-bottom: 1.3px solid black;
   padding-bottom: 0px;
 }
 
 .underline-white {
+  text-decoration: none;
   border-bottom: 1.3px solid white;
   padding-bottom: 0px;
 }
@@ -310,9 +280,10 @@ header {
 .non-underscores {
   text-decoration: none;
 }
-/*Забавно, только под конец заметил, что назвал класс тупо.
-  Надо было non-underline, а еще лучше non-default-underline.
-  Исправлять уже не буду.*/
+
+.active {
+  border-bottom: none;
+}
 
 .font-bold {
   font-family: "Raleway", sans-serif;
@@ -348,14 +319,3 @@ header {
   font-size: 100px;
   text-transform: uppercase;
 }
-/*Большинство классов я сам называл. Надеюсь это не очень большая проблема. В рекомендациях
-  свои классы, но я был в потоке и редко сверялся с рекомендациями (а зря, там много полезного было).
-  В любмо случае уже переименовывать все классы - сизифов труд. Я и так в PerfectPixel упоролся
-  в некоторых моментах.*/
-
-  /*Не очень понимаю как работают относительные еденицы измерения,
-    в тех же line-height. У меня в прошлых коммитах пиксели стояли,
-    в рекомендациях к проектной говорят лучше относительные.*/
-
-    /*Думаю, видно, что я еще профан. А еще, надеюсь, видно, что я хочу учиться. Я очень многое
-      узнал благодаря этой проектной. Читать теорию это одно, но верстать целый сайт другое.*/
